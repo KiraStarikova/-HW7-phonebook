@@ -9,8 +9,9 @@
 |Описание_1  |                                          |
   
  * Модули: 
-1. main.py  
-2. input.py  
-3. output.py  
-4. interface.py  
+1. main.py
+2. controller.py  
+3. input.py  
+4. output.py  
+5. interface.py  
 

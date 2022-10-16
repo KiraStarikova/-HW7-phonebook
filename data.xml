@@ -1,0 +1,79 @@
+<data>
+<person id="Berezin">
+    <Surname>Berezin</Surname>
+    <Name>Aleksandr</Name>
+    <Patronymic>Vladimirovich</Patronymic>
+    <Phone>569589</Phone>
+    <Note>les</Note>
+</row>
+<person id="Borisov">
+    <Surname>Borisov</Surname>
+    <Name>Daniil</Name>
+    <Patronymic>Sergeevich</Patronymic>
+    <Phone>903361</Phone>
+    <Note>rabota</Note>
+</row>
+<person id="Ivanov">
+    <Surname>Ivanov</Surname>
+    <Name>Ivan</Name>
+    <Patronymic>Romanovich</Patronymic>
+    <Phone>324598</Phone>
+    <Note>rabota</Note>
+</row>
+<person id="Kolesnikov">
+    <Surname>Kolesnikov</Surname>
+    <Name>Igor'</Name>
+    <Patronymic>Savvich</Patronymic>
+    <Phone>343365</Phone>
+    <Note>rabota</Note>
+</row>
+<person id="Matveev">
+    <Surname>Matveev</Surname>
+    <Name>Andrej</Name>
+    <Patronymic>Dmitrievich</Patronymic>
+    <Phone>404914</Phone>
+    <Note>ucheba</Note>
+</row>
+<person id="Naumova">
+    <Surname>Naumova</Surname>
+    <Name>Avrora</Name>
+    <Patronymic>Maksimovna</Patronymic>
+    <Phone>184455</Phone>
+    <Note>ucheba</Note>
+</row>
+<person id="Panfilova">
+    <Surname>Panfilova</Surname>
+    <Name>Sofiya</Name>
+    <Patronymic>Rustamovna</Patronymic>
+    <Phone>940868</Phone>
+    <Note>igra</Note>
+</row>
+<person id="Saharov">
+    <Surname>Saharov</Surname>
+    <Name>Bogdan</Name>
+    <Patronymic>Grigor'evich</Patronymic>
+    <Phone>141406</Phone>
+    <Note>rabota</Note>
+</row>
+<person id="Solov'eva">
+    <Surname>Solov'eva</Surname>
+    <Name>Viktoriya</Name>
+    <Patronymic>Alekseevna</Patronymic>
+    <Phone>770848</Phone>
+    <Note>more</Note>
+</row>
+<person id="Fedorov">
+    <Surname>Fedorov</Surname>
+    <Name>Vasilij</Name>
+    <Patronymic>Fyodorovich</Patronymic>
+    <Phone>815533</Phone>
+    <Note>ucheba</Note>
+</row>
+<person id="Haritonov">
+    <Surname>Haritonov</Surname>
+    <Name>Mihail</Name>
+    <Patronymic>Romanovich</Patronymic>
+    <Phone>479065</Phone>
+    <Note>dolzhen</Note>
+</row>
+</data>

@@ -1,0 +1,79 @@
+{
+  "Berezin": {
+    "Surname": "Berezin",
+    "Name": "Aleksandr",
+    "Patronymic": "Vladimirovich",
+    "Phone": "569589",
+    "Note": "les"
+  },
+  "Borisov": {
+    "Surname": "Borisov",
+    "Name": "Daniil",
+    "Patronymic": "Sergeevich",
+    "Phone": "903361",
+    "Note": "rabota"
+  },
+  "Ivanov": {
+    "Surname": "Ivanov",
+    "Name": "Ivan",
+    "Patronymic": "Romanovich",
+    "Phone": "324598",
+    "Note": "rabota"
+  },
+  "Kolesnikov": {
+    "Surname": "Kolesnikov",
+    "Name": "Igor'",
+    "Patronymic": "Savvich",
+    "Phone": "343365",
+    "Note": "rabota"
+  },
+  "Matveev": {
+    "Surname": "Matveev",
+    "Name": "Andrej",
+    "Patronymic": "Dmitrievich",
+    "Phone": "404914",
+    "Note": "ucheba"
+  },
+  "Naumova": {
+    "Surname": "Naumova",
+    "Name": "Avrora",
+    "Patronymic": "Maksimovna",
+    "Phone": "184455",
+    "Note": "ucheba"
+  },
+  "Panfilova": {
+    "Surname": "Panfilova",
+    "Name": "Sofiya",
+    "Patronymic": "Rustamovna",
+    "Phone": "940868",
+    "Note": "igra"
+  },
+  "Saharov": {
+    "Surname": "Saharov",
+    "Name": "Bogdan",
+    "Patronymic": "Grigor'evich",
+    "Phone": "141406",
+    "Note": "rabota"
+  },
+  "Solov'eva": {
+    "Surname": "Solov'eva",
+    "Name": "Viktoriya",
+    "Patronymic": "Alekseevna",
+    "Phone": "770848",
+    "Note": "more"
+  },
+  "Fedorov": {
+    "Surname": "Fedorov",
+    "Name": "Vasilij",
+    "Patronymic": "Fyodorovich",
+    "Phone": "815533",
+    "Note": "ucheba"
+  },
+  "Haritonov": {
+    "Surname": "Haritonov",
+    "Name": "Mihail",
+    "Patronymic": "Romanovich",
+    "Phone": "479065",
+    "Note": "dolzhen"
+  }
+}

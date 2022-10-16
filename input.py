@@ -40,3 +40,18 @@ def getPath():
     while not os.path.exists(path):
         path=input('введите имя файла ')
     return path
+
+def addPerson(path):# это в input
+    while True:
+        newline=getLine()
+        answer=input('Запись верна?\nЗаносить в справочник\n"a"-да, "r"-повторить, "q"-выйти: ')
+        if answer=='a':
+            print('Добавляю запись в файл...')
+            addToFile(path,newline)
+            return
+        if answer=='r':
+            print('Повтрор...')
+            continue
+        if answer=='q':
+            print('Выход...')
+            return
