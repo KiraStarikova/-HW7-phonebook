@@ -16,7 +16,7 @@ def findPerson(path,nubmer):
     file=open(path,'r',encoding='utf-8')
     counter=0
     for line in file:
-        if counter==nubmer:#пока так
+        if counter==nubmer:
             person=",".join(line.split('\n'))
         counter+=1
     file.close()
@@ -60,7 +60,7 @@ def showPerson(path):
         if answer.isdigit():
             if (1<=int(answer)<=count-1):
                 print('Вывожу...')
-                displayPerson(findPerson(path,int(answer)))#тут допилить исключения? 
+                displayPerson(findPerson(path,int(answer)))
                 return
         else:
             print("Некорректный ввод")
@@ -75,10 +75,6 @@ def exportToJson(sourse,target):
             key = line['Surname']
             dic[key] = line        
         JSON.write(json.dumps(dic, indent=2))
-
-
-# sourse = 'data.csv'
-# target='data.xml'
 
 def printXml(headers, line):
     result = f'<person id="{line[0]}">\n'
@@ -95,6 +91,3 @@ def exportToXml(sourse,target):
         for line in reader:
             XML.write(printXml(headers, line) + '\n')
         XML.write('</data>')
-
-
-#exportToXml(sourse,target)

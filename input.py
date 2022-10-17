@@ -1,4 +1,5 @@
 import os
+
 def addToFile(path,newline):
     with open(path,'a',encoding='utf-8') as file:
         if isInFile(path,newline):
@@ -37,11 +38,11 @@ def getLine():
 
 def getPath():
     path=''
-    while not os.path.exists(path):
-        path=input('введите имя файла ')
+    while not (os.path.exists(path) or path=='q'):
+        path=input('введите имя файла или "q" для пропуска: ')
     return path
 
-def addPerson(path):# это в input
+def addPerson(path):
     while True:
         newline=getLine()
         answer=input('Запись верна?\nЗаносить в справочник\n"a"-да, "r"-повторить, "q"-выйти: ')

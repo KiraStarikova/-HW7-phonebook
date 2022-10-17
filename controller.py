@@ -1,8 +1,15 @@
 import interface as i
 import input as inp
 import output as out
+import os
 
 defaultPath='data.csv'# дэфолтный справочник
+
+def checkPath(pathToCheck):# дефолтная проверка пути
+    if os.path.exists(pathToCheck):
+        return pathToCheck
+    print('Файл не найден', end=', ')
+    return inp.getPath()
 
 def menu():
     while True:
@@ -10,57 +17,78 @@ def menu():
         if menu == "1":
             subMenu = i.disp() # чтение из справочника
             if subMenu=="1":
-                out.displayAllData(defaultPath)# вывод всего справочника
-                continue
+                currentPath=checkPath(defaultPath)
+                if currentPath=='q':
+                    print('Пропуск...')
+                    continue
+                else:
+                    out.displayAllData(currentPath)# вывод всего справочника
+                    continue
             if subMenu=="2":
                 print('Ищу человека...')# пиоск человека
-                out.showPerson(defaultPath)
-                continue
+                currentPath=checkPath(defaultPath)
+                if currentPath=='q':
+                    print('Пропуск...')
+                    continue
+                else:
+                    out.showPerson(currentPath)
+                    continue
             elif subMenu=="r": #назад
                 continue
             elif subMenu=="q": #выход
                 break
             else:
                 print("Некорректный ввод")
-                break
+                continue
         elif menu == "2":
             subMenu = i.imp()#запись в справочник
             if subMenu=="1": # добавить человека в справочник
-                inp.addPerson(defaultPath)
+                currentPath=checkPath(defaultPath)
+                if currentPath=='q':
+                    print('Пропуск...')
+                    continue
+                else:
+                    inp.addPerson(currentPath)
+                    continue
             elif subMenu=="r":  #назад
                 continue
             elif subMenu=="q": #выход
                 break
             else:
                 print("Некорректный ввод")
-                break
+                continue
         elif menu == "3":
-            subMenu = i.exp()#сщхранение в файл
-            if subMenu=="1": # CVS
-                target=out.saveToFile('.csv')
-                print(f'сохраняю в {target}...')
-                if target:
-                    out.exportToFile(defaultPath,target)
+            currentPath=checkPath(defaultPath)
+            if currentPath=='q':
+                    print('Пропуск...')
                     continue
-            if subMenu=="2": # JSON
-                target=out.saveToFile('.json')
-                print(f'сохраняю в {target}...')
-                if target:
-                    out.exportToJson(defaultPath,target)
-                    continue
-            if subMenu=="3": # XML
-                target=out.saveToFile('.xml')
-                print(f'сохраняю в {target}...')
-                if target:
-                    out.exportToXml(defaultPath,target)
-                    continue
-            elif subMenu=="r":  #назад
-                continue
-            elif subMenu=="q": #выход
-                break
             else:
-                print("Некорректный ввод")
-                break
+                subMenu = i.exp()#сщхранение в файл
+                if subMenu=="1": # CVS
+                    target=out.saveToFile('.csv')
+                    print(f'сохраняю в {target}...')
+                    if target:
+                        out.exportToFile(currentPath,target)
+                        continue
+                if subMenu=="2": # JSON
+                    target=out.saveToFile('.json')
+                    print(f'сохраняю в {target}...')
+                    if target:
+                        out.exportToJson(currentPath,target)
+                        continue
+                if subMenu=="3": # XML
+                    target=out.saveToFile('.xml')
+                    print(f'сохраняю в {target}...')
+                    if target:
+                        out.exportToXml(currentPath,target)
+                        continue
+                elif subMenu=="r":  #назад
+                    continue
+                elif subMenu=="q": #выход
+                    break
+                else:
+                    print("Некорректный ввод")
+                    continue
         elif menu=="q":
             break
         else:
